@@ -1,6 +1,9 @@
 import { useState } from 'react';
 
 import { Text } from '$/components/Text';
+import { SongCard } from '$/components/SongCard';
+
+import { Song } from './types';
 
 import { Container, SearchInput } from './styles';
 
@@ -68,6 +71,22 @@ function HomeView(): JSX.Element {
         Explore
       </Text>
       <SearchInput placeholder="Search by title, genre..." />
+      <Text tag="h2" variant="title2">
+      Featured songs
+      </Text>
+      {fetchSongs.map(({id, author, genre, description, image, name, audio, favMusic }) => (
+        <SongCard
+        changeFavStatus={changeFavStatus}
+        favMusic={favMusic} 
+        key={id} 
+        image={image} 
+        id={id} 
+        author={author.name} 
+        genre={genre.toLowerCase().replace("_", " ")} 
+        desc={description} 
+        name={name}
+        audio={audio.url}/>
+      ))}
     </Container>
   );
 }
