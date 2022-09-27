@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import HeartGrey from 'link/assets/icons/icon-heart-grey.png';
-import HeartPink from 'link/assets/icons/icon-heart-pink.png';
+import HeartGrey from '$/assets/icons/icon-heart-grey.png';
+import HeartPink from '$/assets/icons/icon-heart-pink.png';
 
 export const Container = styled.div`
   display: flex;
