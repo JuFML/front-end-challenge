@@ -1,7 +1,3 @@
-import badge from '$/assets/z1-badge.png';
-import { Separator } from '$/components/Separator';
-import { Text } from '$/components/Text';
-import { MAIN_MENU_LINKS } from '$/globals/constants/mainMenu';
 import Link from 'next/link';
 import React from 'react';
 
@@ -17,6 +13,11 @@ import {
   UserInfoContainer,
 } from './styles';
 import { MenuLinksProps, SideMenuProps } from './types';
+
+import badge from '$/assets/z1-badge.png';
+import { Separator } from '$/components/Separator';
+import { Text } from '$/components/Text';
+import { MAIN_MENU_LINKS } from '$/globals/constants/mainMenu';
 
 export const SideMenu = ({ className }: SideMenuProps) => {
   const { isMenuItemActive } = useLogic();

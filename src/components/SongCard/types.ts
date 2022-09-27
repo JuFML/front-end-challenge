@@ -3,10 +3,10 @@ export type SongsCard = {
   id: number;
   image: string;
   name: string;
-  author:string;
+  author: string;
   desc: string;
   genre: string;
   audio: string;
   favMusic: boolean;
-  changeFavStatus: (id:number) => void
+  changeFavStatus: (id: number) => void;
 };

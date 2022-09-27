@@ -1,6 +1,7 @@
+import { ReactNode } from 'react';
+
 import { Colors } from '$/styles/themes/theme';
 import { typography } from '$/styles/themes/typography';
-import { ReactNode } from 'react';
 
 export type TVariants = keyof typeof typography;
 

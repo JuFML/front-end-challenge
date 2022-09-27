@@ -1,6 +1,7 @@
+import styled from 'styled-components';
+
 import { SideMenu as DefaultSideMenu } from '$/components/SideMenu';
 import { from } from '$/styles/utils/responsive';
-import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -25,12 +26,12 @@ export const Main = styled.main`
     padding-inline: 6rem;
   }
 
-  @media (max-width: 510px) {    
-  padding-inline: 1.5rem;
-  } 
+  @media (max-width: 510px) {
+    padding-inline: 1.5rem;
+  }
 
-  @media (max-width: 380px) {    
-  padding-inline: .5rem;
+  @media (max-width: 380px) {
+    padding-inline: 0.5rem;
   }
 `;
 

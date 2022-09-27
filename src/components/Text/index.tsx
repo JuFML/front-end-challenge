@@ -8,10 +8,16 @@ export const Text = ({
   variant,
   children,
   className,
-  color = "black",
+  color = 'black',
   ...props
 }: TextProps) => (
-  <Container as={tag} $variant={variant} className={className} $color={color} {...props}>
+  <Container
+    as={tag}
+    $variant={variant}
+    className={className}
+    $color={color}
+    {...props}
+  >
     {children}
   </Container>
 );

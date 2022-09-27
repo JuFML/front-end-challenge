@@ -1,9 +1,10 @@
-import { Separator } from '$/components/Separator';
-import { Text } from '$/components/Text';
 import type { Meta, Story } from '@storybook/react';
 
 import { PageLayout } from '.';
 import { PageLayoutProps } from './types';
+
+import { Separator } from '$/components/Separator';
+import { Text } from '$/components/Text';
 
 export default {
   component: PageLayout,

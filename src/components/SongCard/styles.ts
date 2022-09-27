@@ -14,8 +14,8 @@ export const Container = styled.div`
     height: auto;
     // align-items: center;
 
-    div.upper-card-mob{
-      display:flex;
+    div.upper-card-mob {
+      display: flex;
       width: 100%;
     }
   }
@@ -66,12 +66,12 @@ export const PlayControl = styled.div`
 
   @media (max-width: 1060px) {
     margin-top: 10px;
-  }  
+  }
 
   @media (max-width: 510px) {
     flex-direction: column-reverse;
     align-items: flex-start;
-  } 
+  }
 `;
 
 export const PlayButton = styled.audio`
@@ -84,45 +84,39 @@ export const TagGenre = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E1F4FB;
+  background-color: #e1f4fb;
   font-size: 12px;
   font-weight: 400;
-  border-radius: 47px;  
+  border-radius: 47px;
 
   @media (max-width: 510px) {
-    margin-bottom: 10px
-  } 
+    margin-bottom: 10px;
+  }
 `;
 
-export const HeartIcon = styled.div<{fav: boolean}>`
+export const HeartIcon = styled.div<{ fav: boolean }>`
   width: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 
   @media (max-width: 1060px) {
-    .heart-icon-desk{
+    .heart-icon-desk {
       display: none;
-    }  
+    }
   }
-  
+
   @media (min-width: 1060px) {
-    .heart-icon-mob{
+    .heart-icon-mob {
       display: none;
-    }  
-  }  
+    }
+  }
 
   div {
     width: 25px;
-    height: 25px;    
-    background-image: url(${({fav}) => fav ? HeartPink : HeartGrey});
+    height: 25px;
+    background-image: url(${({ fav }) => (fav ? HeartPink : HeartGrey)});
     background-repeat: no-repeat;
-  }  
+  }
 `;
-
-
-
-
-
-

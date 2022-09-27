@@ -1,5 +1,6 @@
-import { visuallyHidden } from '$/styles/utils/mixins';
 import styled from 'styled-components';
+
+import { visuallyHidden } from '$/styles/utils/mixins';
 
 export const Label = styled.label<{ $visuallyHidden: boolean }>`
   margin-block-end: 0.25rem;
