@@ -12,7 +12,7 @@ import axios from 'axios'
 
 function HomeView(): JSX.Element {
 
-  const [fetchSongs, setFetchSongs] = useState([])
+  const [fetchSongs, setFetchSongs] = useState<Song[]>([])
   
   const QUERY = `
     query {
@@ -60,7 +60,7 @@ function HomeView(): JSX.Element {
       .map( song => song.id)
 
     console.log(favMusics)
-    localStorage.setItem("favSongs", favMusics)
+    localStorage.setItem("favSongs", favMusics.toString())
 
     
   }
