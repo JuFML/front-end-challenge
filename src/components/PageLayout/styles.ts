@@ -5,6 +5,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   height: 100vh;
+
+  @media (max-width: 1060px) {
+    flex-direction: column;
+  }
 `;
 
 export const SideMenu = styled(DefaultSideMenu)`
@@ -19,6 +23,14 @@ export const Main = styled.main`
 
   ${from['tabletLandscape']} {
     padding-inline: 6rem;
+  }
+
+  @media (max-width: 510px) {    
+  padding-inline: 1.5rem;
+  } 
+
+  @media (max-width: 380px) {    
+  padding-inline: .5rem;
   }
 `;
 
