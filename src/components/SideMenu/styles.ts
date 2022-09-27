@@ -9,6 +9,11 @@ export const Container = styled.aside`
   height: 100vh;
 
   background-color: ${({ theme }) => theme.color.grayscale50};
+
+  @media (max-width: 1060px) {
+    width: 100%;
+    height: 15rem;
+  }
 `;
 
 export const UserInfoContainer = styled.div`
